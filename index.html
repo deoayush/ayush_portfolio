@@ -3,57 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ayush Singh — Product Strategy & Automation</title>
-  <meta name="description" content="Ayush Singh — Product strategist, CRM automation & data lead. Portfolio showcasing dashboards, lead-scoring, WhatsApp CRM bot and automation projects." />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <title>Ayush Singh — Product, AI & Automation</title>
+  <meta name="description" content="Ayush Singh — AI-native product & growth operator. Founder’s Office experience, GTM experiments, CRM automation, dashboards." />
   <style>
-    /* Simple, modern single-file CSS — replace colors & fonts as needed */
-    :root{
-      --bg:#0f1724; --card:#0b1220; --muted:#98a0b3; --accent:#7c3aed; --glass: rgba(255,255,255,0.03);
-      --max-width:1100px;
-      color-scheme: dark;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#e6eef8;background:linear-gradient(180deg,#081026 0%, #071022 100%);-webkit-font-smoothing:antialiased}
-    .wrap{max-width:var(--max-width);margin:48px auto;padding:24px}
+    :root{--bg:#071022;--card:#0d1220;--muted:#9aa6bb;--accent:#7c3aed;--glass:rgba(255,255,255,0.03);--max:1100px}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#eaf2ff;background:linear-gradient(180deg,#051027 0%,#071022 100%);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--max);margin:36px auto;padding:28px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .avatar{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#5b21b6);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
-    h1{margin:0;font-size:22px}
-    p.lead{margin:6px 0 0;color:var(--muted)}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#5b21b6);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:26px}
+    p.lead{margin:4px 0 0;color:var(--muted)}
     nav a{color:var(--muted);text-decoration:none;margin-left:18px}
 
-    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start;margin-top:28px}
-    .hero-card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
-    .intro h2{margin:0 0 12px;font-size:28px}
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
-    .tag{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:1fr 380px;gap:26px;margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:14px}
 
-    .projects{margin-top:28px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-    .project{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px}
-    .project h3{margin:0 0 8px}
-    .project p{margin:0;color:var(--muted);font-size:14px}
-    .project .meta{margin-top:12px;font-size:13px;color:var(--muted)}
+    .hero-title{font-size:20px;margin:0 0 10px}
+    .kpi{display:flex;gap:10px;margin-top:12px}
+    .kpi .k{background:var(--glass);padding:8px 12px;border-radius:10px;color:var(--muted);font-size:13px}
 
-    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .skill{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px;color:var(--muted);font-size:13px}
+    .projects{margin-top:18px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .proj{padding:14px;border-radius:10px;background:rgba(255,255,255,0.01)}
+    .proj h3{margin:8px 0}
+    .meta{color:var(--muted);font-size:13px}
 
-    footer{margin-top:40px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .skill{background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;color:var(--muted);font-size:13px}
 
-    /* responsive */
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .projects{grid-template-columns:1fr}
-      nav{display:none}
-    }
+    footer{margin-top:28px;color:var(--muted);display:flex;justify-content:space-between}
 
-    /* simple button */
+    /* visualizations */
+    .viz{height:120px;width:100%;display:flex;align-items:center;justify-content:center}
+
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.nav{display:none}}
+
     .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#5b21b6);color:white;text-decoration:none}
     .muted{color:var(--muted)}
-    .small{font-size:13px}
-
-    /* project image placeholder */
-    .proj-img{height:140px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:8px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
   </style>
 </head>
 <body>
@@ -63,141 +49,151 @@
         <div class="avatar">AS</div>
         <div>
           <h1>Ayush Singh</h1>
-          <p class="lead">Product Strategy • CRM Automation • Data & Dashboards — Gurugram</p>
+          <p class="lead">AI-native product & growth operator — Founder’s Office, GTM, Automation, Dashboards</p>
         </div>
       </div>
-      <nav>
+      <nav class="nav">
         <a href="#projects">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-card intro">
-        <h2>Hi — I solve product & process problems with data, automation and lean product thinking.</h2>
-        <div class="tags">
-          <div class="tag">Founder’s Office</div>
-          <div class="tag">Product Strategy</div>
-          <div class="tag">CRM & Automation</div>
-          <div class="tag">Dashboards & Data</div>
-        </div>
+    <section class="grid">
+      <main>
+        <div class="card">
+          <h2 class="hero-title">I build quick, measurable product experiments & automation that scale.</h2>
+          <p class="muted">I run GTM experiments, build decisioning workflows, and ship analytics & automation that reduce manual effort and improve conversion.</p>
 
-        <p class="muted small">I design and ship end‑to‑end solutions: lead scoring models, risk dashboards, and automation workflows that reduce manual effort and improve conversion. I’ve worked with YC‑backed startups and led cross‑functional initiatives at scale.</p>
-
-        <div style="margin-top:16px">
-          <a class="btn" href="/resume.pdf" download>Download CV</a>
-          <a class="btn" style="background:transparent;border:1px solid rgba(255,255,255,0.06);margin-left:10px;color:var(--muted)" href="mailto:deosingh.ayush@gmail.com">Email me</a>
-        </div>
-
-        <div style="margin-top:18px;">
-          <h4 style="margin:0 0 8px">Selected skills</h4>
-          <div class="skills">
-            <div class="skill">SQL</div>
-            <div class="skill">Superset / Appsmith</div>
-            <div class="skill">RPA / VBA</div>
-            <div class="skill">Python / Flask</div>
-            <div class="skill">Twilio / WhatsApp</div>
-            <div class="skill">Product Strategy</div>
+          <div class="kpi">
+            <div class="k">Lead scoring → +20% conv.</div>
+            <div class="k">Risk dashboard → -70% manual queries</div>
+            <div class="k">WhatsApp CRM MVP → prototype</div>
           </div>
+
+          <div style="margin-top:16px">
+            <a class="btn" href="/resume.pdf" download>Download Resume</a>
+            <a class="btn" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);margin-left:10px" href="mailto:deosingh.ayush@gmail.com">Email</a>
+          </div>
+
+          <h3 style="margin-top:18px">Selected projects</h3>
+
+          <div class="projects">
+            <article class="proj card">
+              <h3>Lead‑scoring & assignment engine</h3>
+              <p class="meta">Built an actionable lead scoring model integrated with CRM rules to prioritise high intent leads and automate assignment.</p>
+              <div class="viz" aria-hidden>
+                <!-- simple SVG bar chart showing +20% impact -->
+                <svg width="100%" height="100%" viewBox="0 0 200 60" preserveAspectRatio="none">
+                  <rect x="10" y="30" width="30" height="20" rx="3" fill="#2b71ff" opacity="0.85"></rect>
+                  <rect x="55" y="18" width="30" height="32" rx="3" fill="#7c3aed"></rect>
+                  <rect x="100" y="12" width="30" height="38" rx="3" fill="#5bb36a" opacity="0.9"></rect>
+                  <text x="10" y="52" font-size="6" fill="#9aa6bb">Before</text>
+                  <text x="55" y="52" font-size="6" fill="#9aa6bb">Model</text>
+                  <text x="100" y="52" font-size="6" fill="#9aa6bb">After</text>
+                </svg>
+              </div>
+              <p class="meta" style="margin-top:8px">Impact: ~20% improvement in conversion.</p>
+            </article>
+
+            <article class="proj card">
+              <h3>Self‑serve risk dashboard</h3>
+              <p class="meta">Designed a Superset dashboard to replace manual reports and empower business users.</p>
+              <div class="viz">
+                <!-- donut chart showing -70% manual queries -->
+                <svg viewBox="0 0 120 120" width="120" height="120">
+                  <circle cx="60" cy="60" r="40" stroke="#2b71ff" stroke-width="20" fill="none" stroke-dasharray="251.2" stroke-dashoffset="75"></circle>
+                  <circle cx="60" cy="60" r="40" stroke="#222" stroke-width="20" fill="none" stroke-dasharray="251.2" stroke-dashoffset="251.2"></circle>
+                  <text x="60" y="66" text-anchor="middle" font-size="14" fill="#e6eef8">70%</text>
+                </svg>
+              </div>
+              <p class="meta" style="margin-top:8px">Impact: ~70% reduction in manual queries.</p>
+            </article>
+
+            <article class="proj card">
+              <h3>WhatsApp CRM bot (MVP)</h3>
+              <p class="meta">Prototype using Flask + Twilio to collect documents and handle follow-ups — improved completion rates for application flows.</p>
+              <div class="viz">
+                <!-- mock phone chat flow -->
+                <svg viewBox="0 0 200 120" width="100%" height="100%">
+                  <rect x="10" y="8" width="180" height="104" rx="10" fill="#061224" stroke="#0b1220"/>
+                  <rect x="22" y="18" width="156" height="22" rx="6" fill="#0f1724"/>
+                  <rect x="22" y="46" width="120" height="14" rx="6" fill="#7c3aed" opacity="0.95"/>
+                  <rect x="22" y="66" width="90" height="14" rx="6" fill="#2b71ff" opacity="0.95"/>
+                </svg>
+              </div>
+              <p class="meta" style="margin-top:8px">Role: Full‑stack prototype — Flask, Twilio, Ngrok.</p>
+            </article>
+
+            <article class="proj card">
+              <h3>Reporting automation & RPA</h3>
+              <p class="meta">Automated recurring telecom reporting using VBA & RPA to cut manual work and errors.</p>
+              <div class="viz">
+                <!-- small timeline / process svg -->
+                <svg viewBox="0 0 200 60" width="100%" height="100%">
+                  <circle cx="20" cy="30" r="6" fill="#7c3aed"></circle>
+                  <rect x="30" y="26" width="120" height="8" rx="4" fill="#223"/>
+                  <circle cx="160" cy="30" r="6" fill="#5bb36a"></circle>
+                  <text x="20" y="48" font-size="8" fill="#9aa6bb" text-anchor="middle">Manual</text>
+                  <text x="160" y="48" font-size="8" fill="#9aa6bb" text-anchor="middle">Automated</text>
+                </svg>
+              </div>
+              <p class="meta" style="margin-top:8px">Outcome: time saved & fewer errors.</p>
+            </article>
+
+          </div>
+
         </div>
-      </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Publications & small wins</h3>
+          <ul class="muted" style="margin:8px 0 0;padding-left:18px">
+            <li>India Quotient — Top 30 Under 30</li>
+            <li>Heavy Lifter of the Month — Urban Company</li>
+            <li>Changemakers Kudos — Cognizant</li>
+          </ul>
+        </div>
+
+      </main>
 
       <aside>
-        <div class="hero-card">
-          <h4 style="margin-top:0">Contact</h4>
-          <p class="muted small">Based in Gurugram — open to Product, Founder's Office, and Growth roles.</p>
-          <p style="margin:8px 0"><strong>Email</strong><br><a href="mailto:deosingh.ayush@gmail.com">deosingh.ayush@gmail.com</a></p>
-          <p style="margin:8px 0"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/ayush-singh-b11373152/" target="_blank">/in/ayush-singh-b11373152</a></p>
-          <div style="margin-top:12px">
-            <a class="btn" href="#projects">View projects</a>
+        <div class="card">
+          <h4 style="margin-top:0">About</h4>
+          <p class="muted">AI-native product & growth operator with Founder’s Office experience at a YC-backed fintech. I run GTM experiments, build automated systems and ship analytics that help founders make faster decisions.</p>
+
+          <h4 style="margin-top:12px">Contact</h4>
+          <p class="muted" style="margin:6px 0"><strong>Email</strong><br>deosingh.ayush@gmail.com</p>
+          <p class="muted" style="margin:6px 0"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/ayush-singh-b11373152/" target="_blank">/in/ayush-singh-b11373152</a></p>
+
+          <h4 style="margin-top:12px">Skills</h4>
+          <div class="skills">
+            <div class="skill">GTM & Growth</div>
+            <div class="skill">GPT & Zapier</div>
+            <div class="skill">Twilio / WhatsApp</div>
+            <div class="skill">SQL & Superset</div>
+            <div class="skill">RPA / VBA</div>
+            <div class="skill">Python / Flask</div>
           </div>
+
+          <h4 style="margin-top:12px">Education</h4>
+          <p class="muted small">B.E. Civil Engineering — BIT Mesra (78.4%)</p>
         </div>
 
-        <div style="height:18px"></div>
-
-        <div class="hero-card">
-          <h4 style="margin-top:0">Quick facts</h4>
-          <p class="small muted" style="margin:6px 0">• B.E. Civil Engineering — BIT Mesra (78.4%)</p>
-          <p class="small muted" style="margin:6px 0">• India Quotient — 30 Under 30</p>
-          <p class="small muted" style="margin:6px 0">• Previously: Adhikosh (Founder's Office), Urban Company, Cognizant</p>
+        <div class="card" style="margin-top:14px">
+          <h4 style="margin-top:0">Quick CV snapshot</h4>
+          <p class="muted small">Founder’s Office @ Adhikosh (YC W20) — Apr 2023 – Present<br>Category Manager @ Urban Company — Oct 2022 – Apr 2023<br>Programmer Analyst @ Cognizant — Jul 2021 – Sep 2022</p>
+          <a class="btn" href="/resume.pdf" style="display:block;text-align:center;margin-top:12px">Download full CV</a>
         </div>
+
       </aside>
-    </section>
 
-    <section id="projects" style="margin-top:34px">
-      <h2 style="margin:0 0 12px">Selected projects</h2>
-      <div class="projects">
-
-        <article class="project">
-          <div class="proj-img">[Screenshot / Diagram]</div>
-          <h3>Lead‑scoring & assignment engine</h3>
-          <p>Designed and deployed a lead scoring model and automated assignment rules for the CRM. Result: ~20% improvement in conversion and faster lead routing to field teams.</p>
-          <div class="meta">Tech: SQL, Python, CRM rules • Role: Owner — modelling & productisation</div>
-        </article>
-
-        <article class="project">
-          <div class="proj-img">[Dashboard screenshot]</div>
-          <h3>Self‑serve risk dashboard</h3>
-          <p>Built a self‑serve risk analytics dashboard to replace manual reports and ad‑hoc queries. This reduced manual queries by ~70% and improved decision turnaround.</p>
-          <div class="meta">Tech: Superset, Postgres • Role: Data & product</div>
-        </article>
-
-        <article class="project">
-          <div class="proj-img">[WhatsApp flow image]</div>
-          <h3>WhatsApp CRM bot (MVP)</h3>
-          <p>Built an end‑to‑end WhatsApp bot using Flask & Twilio to collect application docs (PAN & selfie) and respond to users. Deployed as a prototype for customer follow‑up automation.</p>
-          <div class="meta">Tech: Flask, Twilio, Ngrok • Role: Full‑stack prototype</div>
-        </article>
-
-        <article class="project">
-          <div class="proj-img">[Automation screenshot]</div>
-          <h3>Reporting automation & RPA</h3>
-          <p>Automated recurring telecom reports and built VBA tools to cut manual reporting time. Outcome: significant time savings and fewer human errors.</p>
-          <div class="meta">Tech: VBA, RPA • Role: Engineer & integrator</div>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="about" style="margin-top:34px">
-      <h2 style="margin:0 0 12px">About me</h2>
-      <div class="hero-card">
-        <p class="muted small">I’m Ayush — I enjoy turning ambiguous operational problems into measurable product solutions. I’ve worked in founder’s offices and product teams in high‑growth startups where I owned projects from discovery to launch. I focus on fast experiments, measurable outcomes, and automations that scale.</p>
-
-        <h4 style="margin-top:14px">What I offer</h4>
-        <ul class="small muted">
-          <li>Product strategy & GTM planning</li>
-          <li>Data pipelines, dashboards & analytics</li>
-          <li>CRM automation, RPA & integration</li>
-          <li>Prototype building (Flask, Twilio, simple web apps)</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" style="margin-top:34px">
-      <h2 style="margin:0 0 12px">Get in touch</h2>
-      <div class="hero-card">
-        <p class="muted small">If you’d like to collaborate or discuss roles, reach out — I typically respond within a business day.</p>
-        <p style="margin:8px 0"><strong>Email</strong><br><a href="mailto:deosingh.ayush@gmail.com">deosingh.ayush@gmail.com</a></p>
-        <p style="margin:8px 0"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/ayush-singh-b11373152/" target="_blank">/in/ayush-singh-b11373152</a></p>
-
-        <div style="margin-top:12px">
-          <a class="btn" href="mailto:deosingh.ayush@gmail.com?subject=Portfolio%20enquiry">Say hello</a>
-        </div>
-      </div>
     </section>
 
     <footer>
-      <div class="small muted">© Ayush Singh — Built with a lean, outcome‑first approach</div>
-      <div class="small muted">Made with ❤️ — edit this file to add images & PDFs</div>
+      <div class="muted small">© Ayush Singh — Built with an outcome-first approach</div>
+      <div class="muted small">Made with ❤️ — edit this file in the canvas to update visuals</div>
     </footer>
   </div>
 
-  <script>
-    // Small helper: replace placeholder project content with your screenshots & links
-    // You can also drop this file into any static host (GitHub Pages, Netlify) as index.html
-    console.log('Portfolio loaded — edit content in the HTML file to personalise.');
-  </script>
 </body>
 </html>
