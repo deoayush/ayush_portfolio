@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayush Singh — Product Strategy & Automation</title>
+  <meta name="description" content="Ayush Singh — Product strategist, CRM automation & data lead. Portfolio showcasing dashboards, lead-scoring, WhatsApp CRM bot and automation projects." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    /* Simple, modern single-file CSS — replace colors & fonts as needed */
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#98a0b3; --accent:#7c3aed; --glass: rgba(255,255,255,0.03);
+      --max-width:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#e6eef8;background:linear-gradient(180deg,#081026 0%, #071022 100%);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--max-width);margin:48px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#5b21b6);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start;margin-top:28px}
+    .hero-card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .intro h2{margin:0 0 12px;font-size:28px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+    .tag{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+
+    .projects{margin-top:28px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px}
+    .project h3{margin:0 0 8px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+    .project .meta{margin-top:12px;font-size:13px;color:var(--muted)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .skill{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px;color:var(--muted);font-size:13px}
+
+    footer{margin-top:40px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr}
+      nav{display:none}
+    }
+
+    /* simple button */
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#5b21b6);color:white;text-decoration:none}
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+
+    /* project image placeholder */
+    .proj-img{height:140px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:8px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar">AS</div>
+        <div>
+          <h1>Ayush Singh</h1>
+          <p class="lead">Product Strategy • CRM Automation • Data & Dashboards — Gurugram</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card intro">
+        <h2>Hi — I solve product & process problems with data, automation and lean product thinking.</h2>
+        <div class="tags">
+          <div class="tag">Founder’s Office</div>
+          <div class="tag">Product Strategy</div>
+          <div class="tag">CRM & Automation</div>
+          <div class="tag">Dashboards & Data</div>
+        </div>
+
+        <p class="muted small">I design and ship end‑to‑end solutions: lead scoring models, risk dashboards, and automation workflows that reduce manual effort and improve conversion. I’ve worked with YC‑backed startups and led cross‑functional initiatives at scale.</p>
+
+        <div style="margin-top:16px">
+          <a class="btn" href="/resume.pdf" download>Download CV</a>
+          <a class="btn" style="background:transparent;border:1px solid rgba(255,255,255,0.06);margin-left:10px;color:var(--muted)" href="mailto:deosingh.ayush@gmail.com">Email me</a>
+        </div>
+
+        <div style="margin-top:18px;">
+          <h4 style="margin:0 0 8px">Selected skills</h4>
+          <div class="skills">
+            <div class="skill">SQL</div>
+            <div class="skill">Superset / Appsmith</div>
+            <div class="skill">RPA / VBA</div>
+            <div class="skill">Python / Flask</div>
+            <div class="skill">Twilio / WhatsApp</div>
+            <div class="skill">Product Strategy</div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="hero-card">
+          <h4 style="margin-top:0">Contact</h4>
+          <p class="muted small">Based in Gurugram — open to Product, Founder's Office, and Growth roles.</p>
+          <p style="margin:8px 0"><strong>Email</strong><br><a href="mailto:deosingh.ayush@gmail.com">deosingh.ayush@gmail.com</a></p>
+          <p style="margin:8px 0"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/ayush-singh-b11373152/" target="_blank">/in/ayush-singh-b11373152</a></p>
+          <div style="margin-top:12px">
+            <a class="btn" href="#projects">View projects</a>
+          </div>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="hero-card">
+          <h4 style="margin-top:0">Quick facts</h4>
+          <p class="small muted" style="margin:6px 0">• B.E. Civil Engineering — BIT Mesra (78.4%)</p>
+          <p class="small muted" style="margin:6px 0">• India Quotient — 30 Under 30</p>
+          <p class="small muted" style="margin:6px 0">• Previously: Adhikosh (Founder's Office), Urban Company, Cognizant</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" style="margin-top:34px">
+      <h2 style="margin:0 0 12px">Selected projects</h2>
+      <div class="projects">
+
+        <article class="project">
+          <div class="proj-img">[Screenshot / Diagram]</div>
+          <h3>Lead‑scoring & assignment engine</h3>
+          <p>Designed and deployed a lead scoring model and automated assignment rules for the CRM. Result: ~20% improvement in conversion and faster lead routing to field teams.</p>
+          <div class="meta">Tech: SQL, Python, CRM rules • Role: Owner — modelling & productisation</div>
+        </article>
+
+        <article class="project">
+          <div class="proj-img">[Dashboard screenshot]</div>
+          <h3>Self‑serve risk dashboard</h3>
+          <p>Built a self‑serve risk analytics dashboard to replace manual reports and ad‑hoc queries. This reduced manual queries by ~70% and improved decision turnaround.</p>
+          <div class="meta">Tech: Superset, Postgres • Role: Data & product</div>
+        </article>
+
+        <article class="project">
+          <div class="proj-img">[WhatsApp flow image]</div>
+          <h3>WhatsApp CRM bot (MVP)</h3>
+          <p>Built an end‑to‑end WhatsApp bot using Flask & Twilio to collect application docs (PAN & selfie) and respond to users. Deployed as a prototype for customer follow‑up automation.</p>
+          <div class="meta">Tech: Flask, Twilio, Ngrok • Role: Full‑stack prototype</div>
+        </article>
+
+        <article class="project">
+          <div class="proj-img">[Automation screenshot]</div>
+          <h3>Reporting automation & RPA</h3>
+          <p>Automated recurring telecom reports and built VBA tools to cut manual reporting time. Outcome: significant time savings and fewer human errors.</p>
+          <div class="meta">Tech: VBA, RPA • Role: Engineer & integrator</div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:34px">
+      <h2 style="margin:0 0 12px">About me</h2>
+      <div class="hero-card">
+        <p class="muted small">I’m Ayush — I enjoy turning ambiguous operational problems into measurable product solutions. I’ve worked in founder’s offices and product teams in high‑growth startups where I owned projects from discovery to launch. I focus on fast experiments, measurable outcomes, and automations that scale.</p>
+
+        <h4 style="margin-top:14px">What I offer</h4>
+        <ul class="small muted">
+          <li>Product strategy & GTM planning</li>
+          <li>Data pipelines, dashboards & analytics</li>
+          <li>CRM automation, RPA & integration</li>
+          <li>Prototype building (Flask, Twilio, simple web apps)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:34px">
+      <h2 style="margin:0 0 12px">Get in touch</h2>
+      <div class="hero-card">
+        <p class="muted small">If you’d like to collaborate or discuss roles, reach out — I typically respond within a business day.</p>
+        <p style="margin:8px 0"><strong>Email</strong><br><a href="mailto:deosingh.ayush@gmail.com">deosingh.ayush@gmail.com</a></p>
+        <p style="margin:8px 0"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/ayush-singh-b11373152/" target="_blank">/in/ayush-singh-b11373152</a></p>
+
+        <div style="margin-top:12px">
+          <a class="btn" href="mailto:deosingh.ayush@gmail.com?subject=Portfolio%20enquiry">Say hello</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="small muted">© Ayush Singh — Built with a lean, outcome‑first approach</div>
+      <div class="small muted">Made with ❤️ — edit this file to add images & PDFs</div>
+    </footer>
+  </div>
+
+  <script>
+    // Small helper: replace placeholder project content with your screenshots & links
+    // You can also drop this file into any static host (GitHub Pages, Netlify) as index.html
+    console.log('Portfolio loaded — edit content in the HTML file to personalise.');
+  </script>
+</body>
+</html>
